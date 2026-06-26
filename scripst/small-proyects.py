@@ -1,7 +1,4 @@
-print ("hello everyone can you say me what you wanna drink today")
+servers = ["VM1", "VM2", "VM3","VM4", "VM5"]
 
-coffe = float(input("how many coffe you want"))
-price = 25.23
-total = coffe * price 
-
-print (f" this is the total $ {total} dollars ") 
+for x in servers:
+    print (servers)
