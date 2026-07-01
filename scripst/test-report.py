@@ -1,39 +1,70 @@
-print ("status of server")
+print ("server")
+from datetime import datetime
 
-client1 = int(input("enter the cpu: "))
-client2 = int(input("enter the ram: "))
-client3 = int(input("enter the disk: "))
+cpu_1 = int(input("enter the cpu: "))
+ram_2 = int(input("enter the ram: "))
+disk_3 = int(input("enter the disk: "))
 
 def report_server(cpu, ram, disk):
        
         if cpu <= 75:
-                print("cpu-normal")
+            status_cpu = "normal"
 
-        elif cpu >= 80: 
-                print ("cpu-hot") 
+        elif cpu >= 90: 
+            status_cpu = "dangerous"
         
-        elif cpu >= 90:
-                print ("cpu-dangerous")
+        else:
+            status_cpu = "hot"
+      
+
+
+
 
         if ram <= 65:
-            print("ram-normal")
+            status_ram = "normal"
          
-        elif ram >= 70: 
-            print ("ram-hot")
+        elif ram >= 90: 
+            status_ram = "dangerous"
 
-        elif ram >= 90:
-            print ("ram-dangerous")
-        
+        else:
+            status_ram = "hot"
+       
+
+
+
         if disk <= 65:
-            print("disk-normal")
+            status_disk = "normal"
          
-        elif disk >= 70: 
-            print ("disk-hot")
+        elif disk >= 90: 
+            status_disk = "dangerous"
 
-        elif disk >= 90:
-            print ("disk-dangerous")
-        
+        else:
+            status_disk = "hot"
 
-report_server (client1, client2,client3)
+        now = datetime.now()
+       
+        report = f""" 
+===== SERVER REPORT ===== 
+{now}
+cpu:{status_cpu}
+ram: {status_ram} 
+disk: {status_disk}"""
+      
+        print (report)
+        file = open("report.txt","a")
+        file.write(report)
+        file.write("\n\n")
+        file.close()
+report_server (cpu_1, ram_2, disk_3)
+
+
+
+
+
+
+
+
+
+
 
 

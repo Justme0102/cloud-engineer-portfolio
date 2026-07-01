@@ -1,4 +1,7 @@
-servers = ["VM1", "VM2", "VM3","VM4", "VM5"]
+from datetime import datetime 
+import psutil 
 
-for x in servers:
-    print (servers)
+cpu = psutil.porcent_cpu(interval=1)
+print (cpu)
+now = datetime.now()
+print (now)
