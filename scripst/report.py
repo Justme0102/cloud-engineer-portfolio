@@ -1,9 +1,10 @@
 print ("server")
+import psutil
 from datetime import datetime
 
-cpu_1 = int(input("enter the cpu: "))
-ram_2 = int(input("enter the ram: "))
-disk_3 = int(input("enter the disk: "))
+cpu = psutil.cpu_percent(interval=1)
+ram = psutil.virtual_memory().percent
+disk = psutil.disk_usage("/").percent
 
 def report_server(cpu, ram, disk):
        
@@ -55,7 +56,8 @@ disk: {status_disk}"""
         file.write(report)
         file.write("\n\n")
         file.close()
-report_server (cpu_1, ram_2, disk_3)
+report_server (cpu, ram, disk)
+
 
 
 
