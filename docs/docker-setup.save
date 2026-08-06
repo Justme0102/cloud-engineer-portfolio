@@ -1,0 +1,13 @@
+# hello there I've been learnnig about docker and I have screenshot if you want to see that.
+
+# what comand I learn:
+
+docker pull 
+docker ps
+docker create 
+docker start 
+docker stop 
+docker ps -a (if you want to see all the conteiners)
+docker create --name (exaple) mongo <-- this is the image
+
+

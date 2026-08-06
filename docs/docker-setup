@@ -1,0 +1,17 @@
+# hello there I've been learnnig about docker and I have screenshot if you want to see that.
+
+# what comand I learn:
+
+docker pull 
+docker ps
+docker create 
+docker start 
+docker stop 
+docker ps -a (if you want to see all the conteiners)
+docker create -p(port):(other port) --name (use a name) mongo <---- the image
+docker logs (the id or name)
+docker image rm (the image)
+# this is like a mix of the other comands
+
+docker run (you can use this with the other comands like docker run --name (use a name)
+if you can use this comand for start a conteiner more fast.

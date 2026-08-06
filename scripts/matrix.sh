@@ -2,6 +2,6 @@
 
 echo "hello matrix gonna start"
 
- pwd 
+sleep 2
 
 cmatrix

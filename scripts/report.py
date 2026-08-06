@@ -1,4 +1,4 @@
-print ("server")
+print ("==opennig the monitor==")
 import psutil
 from datetime import datetime
 
