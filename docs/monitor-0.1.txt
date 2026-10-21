@@ -1,0 +1,7 @@
+#The proyect start good 
+
+library of python
+- psutil
+- datetime
+
+I make a simple monitor with the basic python but I'll continue develop that.
